@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DonggukMeal</string>
+    <string name="title_list">식사 목록</string>
+    <string name="title_analysis">식사 분석</string>
+    <string name="icon_calendar">🗓️</string>
+    <string name="icon_place">📍</string>
+    <string name="icon_menu">🍴</string>
+    <string name="explain_input">식사 정보 입력</string>
+    <string name="explain_date">식사 날짜를 입력해주세요</string>
+    <string name="explain_time">식사 시간을 입력해주세요</string>
+    <string name="explain_type">식사 종류를 선택해주세요</string>
+    <string name="explain_place">식사 장소를 선택해주세요</string>
+    <string name="explain_menu">식사 메뉴를 입력해주세요</string>
+    <string name="explain_cost">식사 비용을 입력해주세요</string>
+    <string name="explain_review">식사 후기를 남겨주세요</string>
+    <string name="input_button">입력 완료</string>
+    <string name="icon_time">⏰</string>
+    <string name="icon_type">✅</string>
+    <string name="icon_cost">💸</string>
+    <string name="icon_calorie">🔢</string>
+    <string name="icon_review">️️✏️</string>
+    <string name="title_show">식사 정보</string>
+
+</resources>
