@@ -30,7 +30,7 @@ public class ShowMealDetailActivity extends AppCompatActivity {
             String type = intent.getStringExtra("type");
             String place = intent.getStringExtra("place");
             String menu = intent.getStringExtra("menu");
-            String cost = intent.getStringExtra("cost");
+            int cost = intent.getIntExtra("cost", 0);
             String review = intent.getStringExtra("review");
             int calorie = intent.getIntExtra("calorie", 0);
             byte[] imageData = intent.getByteArrayExtra("image");
@@ -43,7 +43,7 @@ public class ShowMealDetailActivity extends AppCompatActivity {
     }
 
     private void displayMealDetails(String date, String time, String type, String place,
-                                    String menu, String cost, String review, int calorie, byte[] imageData) {
+                                    String menu, int cost, String review, int calorie, byte[] imageData) {
         // Find the corresponding TextView elements in your layout
         TextView showDate = binding.showDate;
         TextView showTime = binding.showTime;
@@ -60,13 +60,11 @@ public class ShowMealDetailActivity extends AppCompatActivity {
         showType.setText(type);
         showPlace.setText(place);
         showMenu.setText(menu);
-        showCost.setText(cost);
+        showCost.setText(String.valueOf(cost));
         showCalorie.setText(String.valueOf(calorie)); // Convert int to String
         showReview.setText(review);
 
         ImageView showImage = binding.showImage; // Get the ImageView reference
-
-
 
         if (imageData != null && imageData.length > 0) {
             // 이미지 데이터가 있는 경우 처리

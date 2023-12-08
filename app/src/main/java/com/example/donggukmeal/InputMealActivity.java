@@ -159,7 +159,7 @@ public class InputMealActivity extends AppCompatActivity {
         new_meal.type = typeName;
         new_meal.place = placeName;
         new_meal.menu = menu;
-        new_meal.cost = cost;
+        new_meal.cost = Integer.parseInt(cost);
         new_meal.review = review;
 
         if (imageView.getDrawable() != null) {

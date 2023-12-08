@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.room.Room;
 
 public class AnalysisFragment extends Fragment {
 
@@ -18,7 +19,9 @@ public class AnalysisFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_analysis, container, false);
 
-        MealDB mealDB = MealDB.getAppDatabase(requireContext());
+        MealDB mealDB = Room.databaseBuilder(requireActivity().getApplicationContext(), MealDB.class, "production")
+                .allowMainThreadQueries()
+                .build();
 
         TextView totalCalorie = rootView.findViewById(R.id.monthlyCalorie);
         TextView totalCost = rootView.findViewById(R.id.monthlyCost);

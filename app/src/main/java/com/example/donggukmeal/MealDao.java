@@ -22,13 +22,13 @@ public interface MealDao {
     @Delete
     void deleteAllMeals(Meal... foodList);
 
-    @Query("SELECT SUM(calorie) FROM Meal WHERE SUBSTR(date, 6, 2) = :selectedMonth")
+    @Query("SELECT SUM(calorie) FROM Meal WHERE SUBSTR(date, 5, 2) = :selectedMonth")
     int getCalorieSumInSpecificMonth(String selectedMonth);
 
-    @Query("SELECT SUM(cost) FROM Meal WHERE SUBSTR(date, 6, 2) = :selectedMonth and type = :selectedType")
+    @Query("SELECT SUM(cost) FROM Meal WHERE SUBSTR(date, 5, 2) = :selectedMonth and type = :selectedType")
     int getCostSumInMonthType(String selectedMonth, String selectedType);
 
-    @Query("SELECT SUM(cost) FROM Meal WHERE SUBSTR(date, 6, 2) = :selectedMonth")
+    @Query("SELECT SUM(cost) FROM Meal WHERE SUBSTR(date, 5, 2) = :selectedMonth")
     int getCostSumInSpecificMonth(String selectedMonth);
 
 

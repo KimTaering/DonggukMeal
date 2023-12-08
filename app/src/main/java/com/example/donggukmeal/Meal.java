@@ -40,7 +40,7 @@ public class Meal {
     public String menu;
 
     @ColumnInfo(name = "cost")
-    public String cost;
+    public int cost;
 
     @ColumnInfo(name = "review")
     public String review;
@@ -77,7 +77,7 @@ public class Meal {
         return menu;
     }
 
-    public String getCost() {
+    public int getCost() {
         return cost;
     }
 
