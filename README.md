@@ -1,5 +1,5 @@
-# 2023-2 Mobile Software Final Project
-🍚 학생 식당 개인 사용 관리 앱 만들기 🍚
+## 2023-2 Mobile Software Final Project
+# 🍚 학생 식당 개인 사용 관리 앱 만들기 🍚
 
 <img width="23%" alt="KakaoTalk_Photo_2023-12-10-01-35-38 001" src="https://github.com/KimTaering/DonggukMeal/assets/92096892/c7922a23-73f6-4fd0-bb0b-3814db15541b">
 <img width="23%" alt="KakaoTalk_Photo_2023-12-10-01-35-38 003" src="https://github.com/KimTaering/DonggukMeal/assets/92096892/d1212bc1-b753-4456-82b2-0eb9824d18b9">
